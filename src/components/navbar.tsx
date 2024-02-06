@@ -12,6 +12,7 @@ export default function Navbar() {
         <div className="navbar">
           <NavLink to="/"  >Home</NavLink>
           
+          <NavLink to="/upcoming">Past CTFs</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>
       </div>
