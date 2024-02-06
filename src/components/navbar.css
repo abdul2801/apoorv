@@ -1,0 +1,28 @@
+.topnav {
+  margin-top: 3%;
+  padding-bottom: 1%;
+}
+
+.navbar {
+  float: right;
+}
+
+.logo {
+  float: left;
+  font-family: monospace;
+}
+
+a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgba(165, 141, 141);
+}
+
+a:hover {
+  color: #dfbfbf;
+}
+
+.active {
+    color: #dfbfbf;
+  }
+  
