@@ -19,6 +19,7 @@ body {
 }
 
 .topnav {
+  
   font-size: 1.3rem;
   margin-top: 3%;
   padding-bottom: 1%;
@@ -411,12 +412,13 @@ footer {
 .faq-cont {
   /* position: absolute; */
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
 
 
 
 }
+
 .cont {
   height: 100vh;
 
@@ -452,15 +454,27 @@ footer {
   padding: 50px 0;
 }
 .ag-courses_item {
+
   position: relative;
   margin: 0 100px 70px;
   overflow: hidden;
   transition: 0.3s;  
 }
+
 /* media query for small device */
 @media (max-width:480px)  {
   .ag-courses_item {
     margin: 0 10px 70px;
+    width: 300px;
+    font-size: 1.2rem;
+  }
+  .faq {
+    font-size: 2.5rem;
+  }
+  .logo {
+    display: none;
+    /* font-size: 1rem; */
+    /* max-width: 100vw; */
   }
 }
 /* skew ag-courses_item on hover and animate*/
