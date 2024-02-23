@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <div className="faq-cont">
         <div className="heading">
-          <span className="faq">FAQ</span>
+          <span className="faq">Announcements</span>
         </div>
 
         <div className="ag-courses_box">

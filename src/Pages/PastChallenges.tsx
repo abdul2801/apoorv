@@ -47,7 +47,7 @@ export default function PastChallenges() {
 
                 <div className="a-courses-item_date-box">
                   
-                  <span className="a-courses-item_date">Tiny Description</span>
+                  <span className="a-courses-item_date">Tiny Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, sit.</span>
                 </div>
               </a>
             </div>

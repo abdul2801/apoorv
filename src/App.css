@@ -465,8 +465,7 @@ footer {
 }
 /* skew ag-courses_item on hover and animate*/
 .ag-courses_item:hover {
-
-  transform: skewX(-15deg);
+  scale: 1.05;
   box-shadow:
   0 0 10px var(--pink),
   0 0 20px var(--pink),
