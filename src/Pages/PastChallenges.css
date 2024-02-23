@@ -8,6 +8,7 @@
     width: 100%;
     overflow: hidden;
     /* padding: 20px; */
+    
 }
  
 .past_cont h1 {
@@ -37,7 +38,7 @@
   .a-courses_item {
    
     width: 25%;
-    /* max-width: 300px; */
+    min-width: 250px;
     
     margin: 0 15px 30px;
     

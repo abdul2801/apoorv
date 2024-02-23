@@ -446,6 +446,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* justify-content: center; */
+  align-items: center;
   flex-direction: column;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -454,7 +456,7 @@ footer {
   padding: 50px 0;
 }
 .ag-courses_item {
-
+  width: 80%;
   position: relative;
   margin: 0 100px 70px;
   overflow: hidden;
