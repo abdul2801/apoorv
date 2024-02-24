@@ -1,0 +1,22 @@
+@media screen and (min-width: 530px) {
+  .about-cont {
+    margin: 40px 120px;
+    width: 79%;
+  }
+    .about-cont p {
+        font-size: 1.12em;
+    }   
+}
+
+footer {
+  text-align: center;
+}
+.link {
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+::-webkit-scrollbar {
+    width: 0.2em;
+    
+  }

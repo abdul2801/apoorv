@@ -22,6 +22,17 @@ a:hover {
   color: #dfbfbf;
 }
 
+@media screen and (min-width: 530px) {
+  .topnav {
+    margin: 0 80px;
+  }
+
+  
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
 
 .active {
     color: #dfbfbf;

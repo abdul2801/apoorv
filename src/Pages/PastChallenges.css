@@ -7,12 +7,12 @@
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    /* padding: 20px; */
     
 }
+
  
 .past_cont h1 {
-    
+    color: white !important;;
     letter-spacing: 0.02em;
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -21,15 +21,16 @@
 .challenges_cont {
     display: flex;
     flex-wrap: wrap;
-    
-    gap: 20px;
+    /* gap: 20px; */
+    margin : 0 30px;
+    row-gap: 20px;
     justify-content: flex-start;
     width: 100%;
-    padding: 20px;
 }
 
 .genre_heading {
-    font-size: 2.5em;
+    color: white !important;
+    font-size: 2.3em;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -69,7 +70,7 @@
     min-height: 87px;
     margin: 0 0 25px;
   
-    overflow: hidden;
+    /* overflow: hidden; */
   
     font-weight: bold;
     font-size: 30px;
@@ -82,14 +83,15 @@
     font-size: 18px;
     color: #FFF;
     height: 40px;
-    text-overflow: ellipsis;
-
+    /* text-overflow: ellipsis; */
     z-index: 2;
     position: relative;
   }
   .a-courses-item_date {
     font-weight: bold;
     color: var(--lpink);
+    font-size: 1.2rem;
+    
     -webkit-transition: color .5s ease;
     -o-transition: color .5s ease;
     transition: color .5s ease
@@ -111,7 +113,7 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
   }
-  .a-courses_item:nth-child(2n) .a-courses-item_bg {
+  /* .a-courses_item:nth-child(2n) .a-courses-item_bg {
     background-color: #3ecd5e;
   }
   .a-courses_item:nth-child(3n) .a-courses-item_bg {
@@ -125,12 +127,28 @@
   }
   .a-courses_item:nth-child(6n) .a-courses-item_bg {
     background-color: #4c49ea;
-  }
+  } */
+
   @media (max-width:480px)  {
     .a-courses_item {
       width: 80%;
       margin: 0 0 30px;
     }
+    .genre_heading {
+      font-size: 1.4em;
+    }
+    .challenges_cont {
+      justify-content: center;
+      padding : 0;
+      margin : 0;
+    }
+    
+
   }
-  
-  
+
+  .active-filter {
+    text-shadow: -1px 0 #27ac32, 1px 0 #27ac32, 0 -1px #27ac32, 0 1px #27ac32 !important;
+
+    /* background: #000 !important; */
+  }
+
