@@ -146,9 +146,5 @@
 
   }
 
-  .active-filter {
-    text-shadow: -1px 0 #27ac32, 1px 0 #27ac32, 0 -1px #27ac32, 0 1px #27ac32 !important;
-
-    /* background: #000 !important; */
-  }
+  
 
