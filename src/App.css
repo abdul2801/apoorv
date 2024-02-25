@@ -59,12 +59,15 @@ a:hover {
   color: #dfbfbf;
 }
 
+
+
 h1{
   text-shadow: -1px 0 #27ac32, 1px 0 #27ac32, 0 -1px #27ac32, 0 1px #27ac32;
 }
 
 h2 {
   text-shadow: -1px 0 #cd3091, 1px 0 #cd3091, 0 -1px #cd3091, 0 1px #cd3091;
+  color : white !important;
 }
 
 h3 {

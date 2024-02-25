@@ -32,7 +32,7 @@
     background: inherit;
     -webkit-filter: blur(50px) grayscale(90%);
 
-    
+
     z-index: -1;
   }
 
@@ -171,10 +171,10 @@
 .tags div:hover:after {border-color:transparent transparent transparent #222}
 
 .active-filter div {
-  background-color: #222;
+  background-color: #121212;
   color: #fff !important;
 }
-.active-filter div::after {border-color:transparent transparent transparent #222}
+.active-filter div::after {border-color:transparent transparent transparent #121212}
 
   
   
