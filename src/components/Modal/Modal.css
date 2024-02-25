@@ -78,13 +78,13 @@
     -moz-border-radius-topleft: 5px;
     -webkit-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     color: #fff;
     font-size:1rem;
     text-decoration: none;
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
     font-weight: bold;
     transition: all 0.2s;
+    /* add shdow which makes it 3d */
     }
     
   .tags div:before {
@@ -142,8 +142,13 @@
     overflow-y: auto;
   }
 
-.tags div:hover {background:#222 !important}
-.tags div:hover:after {border-color:transparent transparent transparent #222!important}
+.tags div:hover {background:#222 }
+.tags div:hover:after {border-color:transparent transparent transparent #222}
+
+.active-filter div {
+  background-color: #222;
+}
+.active-filter div::after {border-color:transparent transparent transparent #222}
 
   
   
@@ -153,6 +158,8 @@
     right: 10px;
     cursor: pointer;
   }
+
+
   
 .custom-btn {
     margin-right: 10px;
@@ -248,7 +255,7 @@
     align-items: center;
     padding: 8px 12px 8px 16px;
     gap: 8px;
-   
+    
     border: none;
     background: #28282927;
     border-radius: 20px;
@@ -265,8 +272,9 @@
   }
   
   .button:hover {
-    /* add very small shadow but spread */
-    box-shadow: 0 0 5px var(--lpink), 0 0 5px var(--lpink) inset;
+    /* add small blue type neon type shadow */
+    box-shadow: 0 0 5px var(--lpink), 0 0 10px var(--lpink), 0 0 10px var(--lpink) ;
+    
     
   }
   ::-webkit-scrollbar {
@@ -278,6 +286,7 @@
   .attachments {
     display: flex;
     gap: 10px;
+    padding: 10px;
     overflow-y: auto;
   }
   .fa-file {
@@ -330,6 +339,11 @@
       font-size: 0.5rem;
       max-lines: 1 !important;
 
+    }
+    .modal {
+      max-width: 80%;
+      margin-top: 140px;
+      /* background-color: red; */
     }
    
     

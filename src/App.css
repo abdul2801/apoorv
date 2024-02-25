@@ -694,8 +694,24 @@ svg {
 
 /* media query for small device */
 @media (max-width:480px)  {
+  .glitch::after {
+    animation: none;
+  }
   .glitch::before {
     animation: none;
   }
+  .glitch {
+    animation: none;
+  }
+  .glow::after {
+    animation: none;
+  }
+  .glow::before {
+    animation: none;
+  }
+  .glow {
+    animation: none;
+  }
+
 
 }
