@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     ScrollReveal().reveal('.container', { delay: 500,});
     // ScrollReveal().reveal('.heading', { delay: 500  });
-    ScrollReveal().reveal('.ag-courses_item', { delay: 500 , interval : 16});
+    ScrollReveal().reveal('.ag-courses_item', { delay: 10 });
     
 
   }, []);
