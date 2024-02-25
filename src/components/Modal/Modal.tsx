@@ -35,8 +35,9 @@ const Modal = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: React.Dispat
       {isOpen && (
         <div className="modal-overlay">
           <div className="modal">
-            <div className="close" onClick={closeModal}><a className='fa fa-window-close'></a></div>
-            <h2 style={{color : "white" ,textAlign : "center"}}>Modal Heading </h2>
+            <div className="close fa fa-times" onClick={closeModal}></div>
+            <h2 style={{color : "white" ,textAlign : "center" , letterSpacing : "1.3px"}}>Modal Heading </h2>
+            <div className='line'/>
 
             <div className='outer-cont'>
             <div>

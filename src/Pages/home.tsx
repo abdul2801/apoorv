@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     ScrollReveal().reveal('.container', { delay: 500,});
     // ScrollReveal().reveal('.heading', { delay: 500  });
-    ScrollReveal().reveal('.ag-courses_item', { delay: 10 });
+    ScrollReveal().reveal('.ag-courses_item', { opacity : 0.5 , delay: 500 , interval : 200});
     
 
   }, []);
@@ -25,7 +25,7 @@ export default function Home() {
             APOORV CTF
           </div>
           <div className="glow">APOORV CTF</div>
-          <p className="subtitle">APOORV CTF &emsp; &emsp; FEB-MAR 2024</p>
+          <p className="subtitle">FEB-MAR 2024</p>
         </div>
       </div>
       <div className="faq-cont">
