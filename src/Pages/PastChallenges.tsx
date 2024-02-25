@@ -4,7 +4,7 @@ import ChallengeBox from "../components/ChallengeBox";
 import Modal from "../components/Modal/Modal";
 export default function PastChallenges() {
   let genres = ["Genre 1", "Genre 2", "Genre 3", "Genre 4"];
-  let tags  = ["Tag 1", "Tag 2", "Tag 3", "Tag 4" , "Tag 5"];
+  let tags  = ["Tag 1", "Tag 2", "Lorem ipsum dolor.", "Tag 4" , "Tag 5"];
   let [activeTags, setActiveTags] = useState<string[]>([]);
 
   const tagClick = (e: React.MouseEvent<HTMLDivElement>) => {

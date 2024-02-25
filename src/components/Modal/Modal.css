@@ -78,10 +78,10 @@
     -moz-border-radius-topleft: 5px;
     -webkit-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
-    color: #fff;
+    color: #ffffff;
     font-size:1rem;
     text-decoration: none;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-shadow: -1px 0 #cd3091, 1px 0 #cd3091, 0 -1px #cd3091, 0 1px #cd3091;
     font-weight: bold;
     transition: all 0.2s;
     /* add shdow which makes it 3d */
@@ -148,6 +148,7 @@
 
 .active-filter div {
   background-color: #222;
+  color: #fff !important;
 }
 .active-filter div::after {border-color:transparent transparent transparent #222}
 
