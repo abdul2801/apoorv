@@ -12,6 +12,8 @@
     z-index: 10;
     align-items: center;
 
+    max-height: 100vh;
+    overflow-y: auto;
     
   }
 
@@ -315,4 +317,23 @@
   display: flex ;
   justify-content: center ; 
   align-items: center ;
+}
+
+/* small devices */
+@media (max-width: 400px) {
+    .outer-cont {
+      flex-direction: column;
+      gap: 0px;
+    }
+    .button {
+      padding: 10px;
+      font-size: 0.5rem;
+      max-lines: 1 !important;
+
+    }
+   
+    
+    .lable {
+      font-size: 0.7rem;
+    }
 }
