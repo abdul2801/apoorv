@@ -136,7 +136,8 @@
   }
   .hints {
     display: flex;
-  }
+    padding-bottom: calc(0.02em + 10px);
+    }
   .hint-desc {
     max-height: 100px;
     overflow-y: auto;
