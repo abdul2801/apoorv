@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* save all colors */
 :root {
   --pink: #cd3091;
@@ -112,7 +113,7 @@ footer {
   color: #dfbfbf;
   display: flex;
   justify-content: center;
-  left: 50%;
+  left: 29%;
   top: 0;
   font-size: 9vw;
   animation: glitch 5s 5s infinite;
@@ -122,6 +123,7 @@ footer {
 
   content: attr(data-text);
   position: absolute;
+  
   /* left: 0; */
   text-shadow: -5px 0 #cd3091;
   background: black;
@@ -150,16 +152,20 @@ footer {
     align-items: center;
     }
   .glitch, .glow {
-    font-size: 3rem !important;
+    font-size: 4rem !important;
+    
     
   }
+  
   .glitch::before, .glow::before {
     translate: -1px;
-    animation: noise-1 5s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+
+    /* animation: noise-1 5s linear infinite alternate-reverse, glitch 5s 5.05s infinite; */
 
   }
   .glitch::after, .glow::after {
-    animation: noise-2 7s linear infinite alternate-reverse, glitch 5s 5s infinite;
+    /* animation: noise-2 7s linear infinite alternate-reverse, glitch 5s 5s infinite; */
+    text-shadow: -4px 0 var(--green) !important;
 
   }
 
@@ -168,7 +174,9 @@ footer {
  
   .subtitle {
     text-align: center;
-    font-size: 0.4rem !important;
+    font-size: 0.8rem !important;
+    /* bold */
+    font-weight: bold !important;
   }
 
 }
@@ -393,10 +401,18 @@ footer {
   }
 }
 .glow {
-  text-shadow: 0 0 1000px #dfbfbf;
+  
   color: transparent;
+  display: flex;
+  /* overflow for chrome */
+  justify-content: center;
+  text-shadow: 0 0 1000px #dfbfbf;
   position: absolute;
+  z-index: 10;
   top: 0;
+  /* left:  29% ; */
+  /* align-items: center; */
+  /* position: absolute; */
 }
 
 .subtitle {
@@ -716,5 +732,7 @@ svg {
     animation: none;
   }
 
+
+ 
 
 }
