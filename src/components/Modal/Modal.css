@@ -345,6 +345,11 @@
   
 .filter {
   cursor: pointer !important;
+  color: white;
+
+}
+.tags {
+  color: white;
 }
 .filter:hover {
   color: var(--lpink);
