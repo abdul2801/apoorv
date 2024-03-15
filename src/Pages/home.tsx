@@ -1,10 +1,20 @@
 import React, { useEffect } from "react";
+import Announcement from "../components/Announcement";
+import useFetchData from "../hooks/useFetchData";
 
 export default function Home() {
   const handleScrolltoTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
+  
+  // fetch announcements and define the type of the data
+  const data = useFetchData("api/all/announcements");
+  const announcement_data = data.data;
+  announcement_data?.sort((a: any, b: any) => {
+    if(a.date === null || b.date === null) return 0;
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+  const loading = data.loading;
   useEffect(() => {
     ScrollReveal().reveal('.container', { delay: 500,});
     // ScrollReveal().reveal('.heading', { delay: 500  });
@@ -13,10 +23,35 @@ export default function Home() {
 
   }, []);
 
+  let Announcements : Announcements  = {
+    "Announcement 1": {
+      title: "Announcement 1",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, saepe recusandae. Ipsam quasi natus eaque",
+    },
+    "Announcement 2": {
+      title: "Announcement 2",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, saepe recusandae. Ipsam quasi natus eaque",
+    },
+    "Announcement 3": {
+      title: "Announcement 3",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, saepe recusandae. Ipsam quasi natus eaque",
+    },
+  }
+  type Announcement = {
+    title: string;
+    description: string;
+  };
+  type Announcements = {
+    [key: string]: Announcement;
+  };
+
+
+
 
 
 
   return (
+
     
     <div>
       <div className="cont">
@@ -34,53 +69,12 @@ export default function Home() {
         </div>
 
         <div className="ag-courses_box">
-          <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
-              <div className="ag-courses-item_bg"></div>
-
-              <h2 className="ag-courses-item_title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eveniet, voluptatibus.?
-              </h2>
-              <p className="ag-courses-item_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                saepe recusandae. Ipsam quasi natus eaque
-              </p>
-            </a>
-          </div>
-          <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
-              <div className="ag-courses-item_bg"></div>
-
-              <h2 className="ag-courses-item_title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eveniet, voluptatibus.?
-              </h2>
-              <p
-                className="ag-courses-item_title"
-                style={{ textShadow: "none" }}
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam amet quia, harum necessitatibus magnam animi molestias
-                quidem, accusantium vero, cumque unde! Repellat modi vero
-                voluptates nihil tenetur et exercitationem facilis.
-              </p>
-            </a>
-          </div>
-          <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
-              <div className="ag-courses-item_bg"></div>
-
-              <h2 className="ag-courses-item_title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eveniet, voluptatibus.?
-              </h2>
-              <p className="ag-courses-item_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                saepe recusandae. Ipsam quasi natus eaque
-              </p>
-            </a>
-          </div>
+          {loading && <p>Loading...</p>}
+          { announcement_data?.map( (announcement : any , index) => (
+            <Announcement key={announcement.id} title={announcement.title} description={announcement.description} />
+          ))}
+         
+        
         </div>
         <div className="bottom">
           <button className="round" onClick={handleScrolltoTop}>

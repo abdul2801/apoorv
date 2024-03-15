@@ -25,7 +25,7 @@
     margin : 0 30px;
     row-gap: 20px;
     justify-content: flex-start;
-    width: 100%;
+    width: 100% ;
 }
 
 .genre_heading {
@@ -61,6 +61,7 @@
     text-decoration: none;
     color: #FFF;
   }
+ 
   .a-courses-item_link:hover .a-courses-item_bg {
     -webkit-transform: scale(10);
     -ms-transform: scale(10);
@@ -142,9 +143,17 @@
       padding : 0;
       margin : 0;
     }
+   
+  
+      
     
 
   }
+@media screen and (min-width: 768px){
+  .genre_cont {
+    min-width: 800px;
+  }
+}
 
   
 
