@@ -1,1 +1,1 @@
-https://apoorvctf.netlify.app/
+https://ctf.iiitkottayam.ac.in/
